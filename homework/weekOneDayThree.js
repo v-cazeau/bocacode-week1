@@ -5,6 +5,8 @@ function multiplyTHESE(num1, num2) {
     console.log(result); 
 }
 
+
+
 multiplyTHESE(3,5);
 
 // question TWO
@@ -28,9 +30,8 @@ function getGrade(numGrade) {
 
 getGrade(89)
 
-// question THREE && FOUR
+// question THREE
 
-function musicGen() {
     const genreTypes = [
         'Konpa', 
         'Soca', 
@@ -45,7 +46,10 @@ function musicGen() {
         'Country'
     ]
 
-}
+// question FOUR
 
-const firstGen = musicGen[1]
-console.log(firstGen)
+function musicGen(genreTypes){
+    return genreTypes[0];
+}
+const firstGen = musicGen(genreTypes);
+ console.log(firstGen); 
